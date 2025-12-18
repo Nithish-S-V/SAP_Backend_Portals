@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SICF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <URL>/sap/opu/odata/sap/L25100000004232/</URL>
+   <ICFSERVICE>
+    <ICF_NAME>L25100000004232</ICF_NAME>
+    <ORIG_NAME>L25100000004232</ORIG_NAME>
+    <ICFALTNME>ZEHSM_PORTAL_863_SRV</ICFALTNME>
+    <ICFALTNME_ORIG>zehsm_portal_863_srv</ICFALTNME_ORIG>
+   </ICFSERVICE>
+   <ICFDOCU>
+    <ICF_NAME>L25100000004232</ICF_NAME>
+    <ICF_LANGU>E</ICF_LANGU>
+    <ICF_DOCU>ZEHSM_PORTAL_863_SRV</ICF_DOCU>
+   </ICFDOCU>
+   <ICFHANDLER_TABLE>
+    <ICFHANDLER>
+     <ICF_NAME>L25100000004232</ICF_NAME>
+     <ICFORDER>01</ICFORDER>
+     <ICFTYP>A</ICFTYP>
+     <ICFHANDLER>/IWFND/CL_SODATA_HTTP_HANDLER</ICFHANDLER>
+    </ICFHANDLER>
+   </ICFHANDLER_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

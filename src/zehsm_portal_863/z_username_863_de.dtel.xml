@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_USERNAME_863_DE</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>PERNR</DOMNAME>
+    <SCRLEN1>07</SCRLEN1>
+    <SCRLEN3>23</SCRLEN3>
+    <DDTEXT>Data Element for EHSM User Name</DDTEXT>
+    <SCRTEXT_S>Emp. ID</SCRTEXT_S>
+    <SCRTEXT_L>Employee Identification</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

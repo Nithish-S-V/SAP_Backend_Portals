@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service definition for quality portal'
+define service Z863_SD_QUALITY {
+  expose Z863_C_QLOGIN;
+  expose Z863_C_QINSPECT;
+  expose Z863_C_QRECORD;
+  expose Z863_C_QUSAGE;
+}

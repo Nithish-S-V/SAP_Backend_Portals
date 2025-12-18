@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Vendor Portal 863</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_VENDOR_863TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_VENDOR_863</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_FINANCE_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Finance Sheet</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_FINANCE</PARAMETER>
+       <TYP>ZTT_FIN_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_FINANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Finance Invoice and Aging</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_GR_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Goods Reciept</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_GR</PARAMETER>
+       <TYP>ZTT_GR_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_GR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Goods Reciept</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_INVOICE_PDF_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Invoice PDF</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_INVOICE_NO</PARAMETER>
+       <TYP>BELNR_D</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_BASE64</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_INVOICE_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Number of an Accounting Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_BASE64</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_LOGIN_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Vendor Portal Login RFC</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PASSWORD</PARAMETER>
+       <TYP>CHAR20</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESPONSE</PARAMETER>
+       <TYP>ZTT_LOGIN_RES_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PASSWORD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RESPONSE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Login Responce</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_MEMO_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_MEMOS</PARAMETER>
+       <TYP>ZTT_MEMO_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_MEMOS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Memo</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_PO_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Purchase Order</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_PO</PARAMETER>
+       <TYP>ZTT_PO_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Purchase Order</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_PROFILE_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Profile</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_PROFILE</PARAMETER>
+       <TYP>ZTT_PROFILE_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PROFILE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Profile</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_RFQ_863</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Functional Module for Request for Quotation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RFQ</PARAMETER>
+       <TYP>ZTT_RFQ_863</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VENDOR_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Account Number of Supplier</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RFQ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for RFQ</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
